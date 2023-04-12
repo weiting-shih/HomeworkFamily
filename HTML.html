@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <script>
+            function game(){
+                let sum = 0;
+                if($(".gameSelectOrange").val() == "orange")sum++;
+                if($(".gameSelectPomelo").val() == "pomelo")sum++;
+                if($(".gameSelectMom").val() == "mom")sum++;
+                if($(".gameSelectDad").val() == "dad")sum++;
+                alert("共四題/答對"+sum+"題");
+            }
+        </script>
+    </head>
+    <div>
+    <img class="gameImg" src="images/橘子.png" ></img>
+    <select class="gameSelectOrange">
+            <option   value="guess">猜猜我是誰</option>
+            <option   value="orange">立花橘子</option>
+            <option   value="pomelo">立花柚彥</option>
+            <option   value="mom">立花翠</option>
+            <option   value="dad">立花仁</option>
+    </select>
+    </div>
+    <div>
+        <img class="gameImg" src="images/柚子.png" style="width: 150px;"></img>
+        <select class="gameSelectPomelo">
+            <option   value="guess">猜猜我是誰</option>
+            <option   value="orange">立花橘子</option>
+            <option   value="pomelo">立花柚彥</option>
+            <option   value="mom">立花翠</option>
+            <option   value="dad">立花仁</option>
+        </select>
+    </div>
+    <div>
+
+        <img class="gameImg" src="images/花媽.png" style="width: 150px;"></img>
+        <select class="gameSelectMom">
+            <option   value="guess">猜猜我是誰</option>
+            <option   value="orange">立花橘子</option>
+            <option   value="pomelo">立花柚彥</option>
+            <option   value="mom">立花翠</option>
+            <option   value="dad">立花仁</option>
+        </select>
+    </div>
+    <div>
+    <img class="gameImg" src="images/花爸.png" style="width: 150px;"></img>
+    <select class="gameSelectDad">
+        <option   value="guess">猜猜我是誰</option>
+        <option   value="orange">立花橘子</option>
+        <option   value="pomelo">立花柚彥</option>
+        <option   value="mom">立花翠</option>
+        <option   value="dad">立花仁</option>
+    </select>
+    </div>
+    <button onclick="game()">送出</button>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</html>
